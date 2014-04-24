@@ -221,9 +221,6 @@ class Container(Entity):
         # Should this container run with -privileged?
         self.privileged = config.get('privileged', False)
 
-        # Should this container run with --tty?
-        self.tty = config.get('tty', False)
-
         # Stop timeout
         self.stop_timeout = config.get('stop_timeout', 10)
 
